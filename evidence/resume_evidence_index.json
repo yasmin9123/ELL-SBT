@@ -1,0 +1,57 @@
+{
+  "object_id": "evidence_resume_eva_lerner_lam_v1",
+  "object_type": "evidence_index",
+  "source_document": {
+    "title": "Eva Lerner-Lam Resume",
+    "date": "2024-04-20",
+    "source_type": "resume",
+    "privacy_handling": "Do not publish private address, phone number, or unnecessary contact details in public SBT records."
+  },
+  "evidence_sections": {
+    "education": {
+      "summary": "Lists Princeton University BA, MIT MS in Civil Engineering--Transportation Systems Division, UC Irvine management certificate, and MIT blockchain technologies certificate.",
+      "supports_claims": [
+        "claim_princeton_ba_1976",
+        "claim_mit_ms_1978",
+        "claim_mit_blockchain_certificate_2019"
+      ]
+    },
+    "employment_history": {
+      "summary": "Lists Palisades Consulting Group, Inc. Founder and President beginning in 1988, along with earlier transportation planning and operations roles.",
+      "supports_claims": [
+        "claim_professional_role_palisades_founder_president"
+      ]
+    },
+    "awards_and_honors": {
+      "summary": "Lists 2023 National Academy of Engineering election and other ASCE, ITE, and transportation engineering awards.",
+      "supports_claims": [
+        "claim_nae_member_2023"
+      ]
+    },
+    "boards": {
+      "summary": "Lists board service including SAE New York Metropolitan Section Executive Committee, ITE International Board of Direction, ASCE T&DI leadership, Princeton trusteeship, and NJ Transit board service."
+    },
+    "selected_leadership_experience": {
+      "summary": "Lists leadership in ASCE transportation policy, smart mobility for smart cities, conferences, webinars, workshops, transit security, and ITS standards-related efforts.",
+      "supports_claims": [
+        "claim_smart_mobility_smart_cities"
+      ]
+    },
+    "professional_affiliations_service": {
+      "summary": "Lists professional affiliations and service with ASCE, ITE, SAE, IEEE, ITS America, Transportation Research Board, and other organizations.",
+      "supports_claims": [
+        "claim_asce_transportation_leadership"
+      ]
+    },
+    "publications": {
+      "summary": "Lists peer-reviewed, academic, and miscellaneous publications related to ITS, transportation systems, transit security, infrastructure, and planning."
+    },
+    "invited_presentations": {
+      "summary": "Lists invited presentations on smart cities, infrastructure, transportation systems, EV infrastructure, security, and related topics."
+    }
+  },
+  "verification_notes": {
+    "verification_level": "resume_attested",
+    "meaning": "Claims are based on the attached resume. Higher verification could be added later through public links, institutional records, ORCID, DOI records, NAE profile, ASCE profile, or signed confirmation from the subject."
+  }
+}
