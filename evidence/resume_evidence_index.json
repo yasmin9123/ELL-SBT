@@ -50,8 +50,26 @@
       "summary": "Lists invited presentations on smart cities, infrastructure, transportation systems, EV infrastructure, security, and related topics."
     }
   },
+  "external_evidence": [
+    {
+      "claim_id": "claim_nae_member_2023",
+      "source_name": "ASCE T&DI News - Eva Lerner-Lam Elected to the National Academy of Engineering",
+      "source_url": "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute/news/eva-lerner-lam-elected-to-the-national-academy-of-engineering",
+      "source_type": "professional_society_news",
+      "verification_level": "public_record_verified",
+      "supports": "Eva Lerner-Lam's 2023 election to the National Academy of Engineering."
+    },
+    {
+      "claim_id": "claim_professional_role_palisades_founder_president",
+      "source_name": "ASCE Author Profile - Eva Lerner-Lam",
+      "source_url": "https://www.asce.org/publications-and-news/civil-engineering-source/authors/eva-lerner-lam",
+      "source_type": "professional_society_author_profile",
+      "verification_level": "public_record_verified",
+      "supports": "Eva Lerner-Lam's ASCE-listed author profile and founder/president role at Palisades Consulting Group Inc."
+    }
+  ],
   "verification_notes": {
-    "verification_level": "resume_attested",
-    "meaning": "Claims are based on the attached resume. Higher verification could be added later through public links, institutional records, ORCID, DOI records, NAE profile, ASCE profile, or signed confirmation from the subject."
+    "verification_level": "resume_attested_with_external_public_sources",
+    "meaning": "Core claims are based on the attached resume. Selected claims are strengthened with public professional-society sources. Higher verification could be added later through institutional records, signed confirmation from the subject, DID signatures, ORCID, DOI records, NAE profile, ASCE profile, or other official sources."
   }
 }
