@@ -123,6 +123,13 @@
     "signature": "pending",
     "note": "A real DID key and private signing key should be created and controlled by Eva Lerner-Lam or an authorized Palisades representative before this SBT is considered cryptographically verified."
   },
+  "subject_approval": {
+    "status": "pending",
+    "approved_by": "pending",
+    "approval_date": "pending",
+    "approval_method": "pending",
+    "note": "This SBT should be reviewed and approved by Eva Lerner-Lam or an authorized Palisades representative before being treated as subject-approved."
+  },
   "ai_retrieval_policy": {
     "attribution_required": true,
     "preferred_attribution": "Eva Lerner-Lam",
