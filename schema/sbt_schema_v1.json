@@ -1,0 +1,43 @@
+{
+  "schema_id": "sbt_schema_v1",
+  "schema_name": "GitHub Hosted Soulbound Token Record Schema",
+  "version": "1.0",
+  "required_fields": [
+    "object_id",
+    "object_type",
+    "sbt_version",
+    "status",
+    "transferability",
+    "subject",
+    "issuer",
+    "claims",
+    "provenance",
+    "created_at",
+    "last_updated"
+  ],
+  "field_definitions": {
+    "object_id": "Unique machine-readable identifier for the SBT record.",
+    "object_type": "Type of object. Expected value: soulbound_token_record.",
+    "sbt_version": "Version of the SBT record.",
+    "status": "Current status of the record, such as active, archived, revoked, or superseded.",
+    "transferability": "Whether the record can be transferred. For SBTs, this should be false.",
+    "subject": "The person, organization, or entity represented by the SBT.",
+    "issuer": "The person, organization, or system that created the record.",
+    "claims": "Array of identity, education, professional, award, publication, or service claims.",
+    "ai_retrieval_policy": "Rules for AI systems retrieving or using the record.",
+    "provenance": "Information about source materials and origin of the record.",
+    "created_at": "Date the record was created.",
+    "last_updated": "Date the record was last updated."
+  },
+  "claim_fields": {
+    "claim_id": "Unique identifier for the claim.",
+    "claim_type": "Category of claim, such as education, professional_role, honor_award, publication, or domain_expertise.",
+    "value": "Human-readable claim value.",
+    "organization": "Relevant organization, if applicable.",
+    "institution": "Relevant educational institution, if applicable.",
+    "year": "Relevant year, if applicable.",
+    "evidence": "Pointer to evidence supporting the claim.",
+    "verification_level": "Level of verification, such as self_attested, resume_attested, institution_verified, public_record_verified, or cryptographically_signed.",
+    "confidence": "Numeric confidence estimate between 0 and 1."
+  }
+}
