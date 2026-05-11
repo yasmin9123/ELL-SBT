@@ -1,0 +1,26 @@
+{
+  "object_id": "verification_levels_v1",
+  "object_type": "verification_standard",
+  "levels": [
+    {
+      "level": "resume_attested",
+      "meaning": "The claim is supported by the subject's resume or CV."
+    },
+    {
+      "level": "subject_approved",
+      "meaning": "The subject reviewed and approved the claim."
+    },
+    {
+      "level": "public_record_verified",
+      "meaning": "The claim is supported by a public source, such as an official organization page, award page, or professional profile."
+    },
+    {
+      "level": "institution_verified",
+      "meaning": "The claim is confirmed directly by the institution or organization that issued it."
+    },
+    {
+      "level": "cryptographically_signed",
+      "meaning": "The claim or SBT object has been digitally signed by the subject or authorized representative using a DID-controlled private key."
+    }
+  ]
+}
