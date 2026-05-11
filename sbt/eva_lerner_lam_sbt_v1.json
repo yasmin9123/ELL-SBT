@@ -11,15 +11,15 @@
     "display_name": "Eva Lerner-Lam",
     "canonical_name": "Eva Lerner-Lam",
     "professional_title": "Founder and President, Palisades Consulting Group",
-    "did": "did:example:eva-lerner-lam",
+    "did": "pending",
     "identity_object": "../identity/eva_lerner_lam_identity_v1.json"
   },
   "issuer": {
-    "issuer_name": "ELL-SBT GitHub Repository",
-    "issuer_type": "github_hosted_credential_record",
+    "issuer_name": "Yasmin Korin",
+    "issuer_type": "repository_creator",
+    "issuer_role": "SBT object implementer",
     "repository": "ELL-SBT",
-    "issued_by": "Yasmin Korin",
-    "issuer_role": "Repository creator / credential object implementer"
+    "verification_note": "This record was structured by the repository creator using resume-based evidence and selected public sources. It has not yet been cryptographically signed by the subject."
   },
   "claims": [
     {
@@ -28,9 +28,13 @@
       "value": "Founder and President",
       "organization": "Palisades Consulting Group, Inc.",
       "start_year": 1988,
-      "evidence": "../evidence/resume_evidence_index.json#employment_history",
-      "verification_level": "resume_attested",
-      "confidence": 0.95
+      "evidence": [
+        "../evidence/resume_evidence_index.json#employment_history",
+        "../evidence/resume_evidence_index.json#external_evidence"
+      ],
+      "external_source_url": "https://www.asce.org/publications-and-news/civil-engineering-source/authors/eva-lerner-lam",
+      "verification_level": "public_record_verified",
+      "confidence": 0.98
     },
     {
       "claim_id": "claim_nae_member_2023",
@@ -38,9 +42,13 @@
       "value": "Elected member of the National Academy of Engineering",
       "year": 2023,
       "description": "Elected for accelerating adoption of intelligent transportation systems and smart cities codes and standards into engineering practice.",
-      "evidence": "../evidence/resume_evidence_index.json#awards_and_honors",
-      "verification_level": "resume_attested",
-      "confidence": 0.95
+      "evidence": [
+        "../evidence/resume_evidence_index.json#awards_and_honors",
+        "../evidence/resume_evidence_index.json#external_evidence"
+      ],
+      "external_source_url": "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute/news/eva-lerner-lam-elected-to-the-national-academy-of-engineering",
+      "verification_level": "public_record_verified",
+      "confidence": 0.98
     },
     {
       "claim_id": "claim_princeton_ba_1976",
@@ -60,6 +68,16 @@
       "degree": "Master of Science",
       "field": "Civil Engineering--Transportation Systems Division",
       "year": 1978,
+      "evidence": "../evidence/resume_evidence_index.json#education",
+      "verification_level": "resume_attested",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "claim_uc_irvine_certificate_1981",
+      "claim_type": "education_certificate",
+      "institution": "University of California, Irvine",
+      "credential": "Certificate in Management of Transportation Programs and Systems",
+      "year": 1981,
       "evidence": "../evidence/resume_evidence_index.json#education",
       "verification_level": "resume_attested",
       "confidence": 0.9
@@ -92,6 +110,19 @@
       "confidence": 0.9
     }
   ],
+  "verification_status": {
+    "current_level": "resume_attested_with_selected_public_record_verification",
+    "subject_approval": "pending",
+    "did_signature": "pending",
+    "external_public_records": "partially_added",
+    "notes": "The NAE election claim and Palisades founder/president claim include public ASCE source links. Other claims are currently resume-attested and can be strengthened later with institutional or organizational sources."
+  },
+  "cryptographic_verification": {
+    "status": "pending_subject_approval",
+    "did": "pending",
+    "signature": "pending",
+    "note": "A real DID key and private signing key should be created and controlled by Eva Lerner-Lam or an authorized Palisades representative before this SBT is considered cryptographically verified."
+  },
   "ai_retrieval_policy": {
     "attribution_required": true,
     "preferred_attribution": "Eva Lerner-Lam",
@@ -104,7 +135,8 @@
     "source_document": "Eva Lerner-Lam Resume, dated 20 April 2024",
     "source_type": "resume",
     "source_status": "attached_to_creator_workflow",
-    "created_for_repository": "ELL-SBT"
+    "created_for_repository": "ELL-SBT",
+    "privacy_note": "Private address, phone number, and unnecessary personal contact information from the source resume are intentionally excluded from this public SBT record."
   },
   "created_at": "2026-05-11",
   "last_updated": "2026-05-11"
