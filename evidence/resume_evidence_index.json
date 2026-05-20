@@ -44,7 +44,10 @@
       ]
     },
     "publications": {
-      "summary": "Lists peer-reviewed, academic, and miscellaneous publications related to ITS, transportation systems, transit security, infrastructure, and planning."
+      "summary": "Lists peer-reviewed, academic, and miscellaneous publications related to ITS, transportation systems, transit security, infrastructure, and planning, including a Princeton senior thesis record.",
+      "supports_claims": [
+        "claim_princeton_senior_thesis"
+      ]
     },
     "invited_presentations": {
       "summary": "Lists invited presentations on smart cities, infrastructure, transportation systems, EV infrastructure, security, and related topics."
@@ -66,10 +69,18 @@
       "source_type": "professional_society_author_profile",
       "verification_level": "public_record_verified",
       "supports": "Eva Lerner-Lam's ASCE-listed author profile and founder/president role at Palisades Consulting Group Inc."
+    },
+    {
+      "claim_id": "claim_princeton_senior_thesis",
+      "source_name": "Princeton DataSpace - Senior Thesis Record",
+      "source_url": "https://dataspace.princeton.edu/handle/88435/dsp01pc289k046?mode=full",
+      "source_type": "institutional_repository_record",
+      "verification_level": "public_institutional_record",
+      "supports": "Public Princeton DataSpace repository record supporting Eva Lerner-Lam's senior thesis."
     }
   ],
   "verification_notes": {
     "verification_level": "resume_attested_with_external_public_sources",
-    "meaning": "Core claims are based on the attached resume. Selected claims are strengthened with public professional-society sources. Higher verification could be added later through institutional records, signed confirmation from the subject, DID signatures, ORCID, DOI records, NAE profile, ASCE profile, or other official sources."
+    "meaning": "Core claims are based on the attached resume. Selected claims are strengthened with public professional-society sources and institutional repository records. Higher verification could be added later through institutional records, signed confirmation from the subject, DID signatures, ORCID, DOI records, NAE profile, ASCE profile, or other official sources."
   }
 }
