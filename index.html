@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Eva Lerner-Lam — AI-Readable Verified Profile</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+
+    h1 {
+      color: #111;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    a {
+      color: #0a58ca;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 8px 8px 8px 0;
+      padding: 10px 14px;
+      background: #111;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: #333;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Eva Lerner-Lam — AI-Readable Verified Profile</h1>
+  <p class="subtitle">
+    A public, evidence-backed identity profile structured like a Soulbound Token.
+  </p>
+
+  <div class="card">
+    <h2>What this is</h2>
+    <p>
+      This repository contains a structured Soulbound Token-style profile,
+      including identity data, evidence references, verification levels,
+      and schema files. Unlike a traditional resume, this profile is designed
+      to be machine-readable, evidence-backed, and usable by AI retrieval tools.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>View the source files</h2>
+    <p>
+      These files are the public source of truth for the profile:
+    </p>
+
+    <a class="button" href="sbt/eva_lerner_lam_sbt_v1.json">View SBT JSON</a>
+    <a class="button" href="identity/eva_lerner_lam_identity_v1.json">View Identity JSON</a>
+    <a class="button" href="evidence/resume_evidence_index.json">View Evidence Index</a>
+    <a class="button" href="schema/sbt_schema_v1.json">View Schema</a>
+    <a class="button" href="verification_levels.json">View Verification Levels</a>
+  </div>
+
+  <div class="card">
+    <h2>Suggested questions</h2>
+    <ul>
+      <li>What claims are included in this SBT?</li>
+      <li>What evidence supports each claim?</li>
+      <li>Which claims are self-attested, semi-verifiable, or publicly verifiable?</li>
+      <li>How is this different from a traditional resume?</li>
+      <li>How could an AI system use this profile as a RAG target?</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Purpose</h2>
+    <p>
+      The purpose of this profile is to make professional identity information
+      more transparent, structured, and verifiable than a standard resume.
+    </p>
+  </div>
+</body>
+</html>
