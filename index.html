@@ -47,12 +47,6 @@
       text-decoration: underline;
     }
 
-    code {
-      background: #eee;
-      padding: 2px 5px;
-      border-radius: 4px;
-    }
-
     .button {
       display: inline-block;
       margin: 8px 8px 8px 0;
@@ -67,11 +61,17 @@
       background: #333;
       text-decoration: none;
     }
+
+    .note {
+      font-size: 14px;
+      color: #666;
+    }
   </style>
 </head>
 
 <body>
   <h1>Eva Lerner-Lam — AI-Readable Verified Profile</h1>
+
   <p class="subtitle">
     A public, evidence-backed identity profile structured like a Soulbound Token.
   </p>
@@ -79,10 +79,14 @@
   <div class="card">
     <h2>What this is</h2>
     <p>
-      This repository contains a structured Soulbound Token-style profile,
-      including identity data, evidence references, verification levels,
-      and schema files. Unlike a traditional resume, this profile is designed
-      to be machine-readable, evidence-backed, and usable by AI retrieval tools.
+      This repository contains a structured Soulbound Token-style profile for
+      Eva Lerner-Lam. It includes identity information, professional claims,
+      evidence references, verification levels, and schema files.
+    </p>
+
+    <p>
+      Unlike a traditional resume, this profile is designed to be machine-readable,
+      evidence-backed, and usable by AI retrieval tools.
     </p>
   </div>
 
@@ -117,5 +121,26 @@
       more transparent, structured, and verifiable than a standard resume.
     </p>
   </div>
+
+  <div class="card">
+    <h2>Repository structure</h2>
+    <p>
+      This public profile is organized into identity, SBT, evidence, schema,
+      and verification-level files.
+    </p>
+
+    <ul>
+      <li><strong>identity/</strong> — identity record</li>
+      <li><strong>sbt/</strong> — Soulbound Token-style profile</li>
+      <li><strong>evidence/</strong> — evidence index</li>
+      <li><strong>schema/</strong> — schema for the SBT structure</li>
+      <li><strong>verification_levels.json</strong> — definitions of verification levels</li>
+    </ul>
+  </div>
+
+  <p class="note">
+    This page presents public, structured profile data only. It is intended for
+    transparency, attribution, and AI-readability.
+  </p>
 </body>
 </html>
