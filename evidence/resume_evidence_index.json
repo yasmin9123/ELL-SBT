@@ -1,15 +1,84 @@
+```json
 {
   "object_id": "evidence_resume_eva_lerner_lam_v1",
   "object_type": "evidence_index",
+  "subject": {
+    "display_name": "Eva Lerner-Lam",
+    "canonical_id": "eva_lerner_lam"
+  },
   "source_document": {
     "title": "Eva Lerner-Lam Resume",
     "date": "2024-04-20",
     "source_type": "resume",
-    "privacy_handling": "Do not publish private address, phone number, or unnecessary contact details in public SBT records."
+    "privacy_handling": "Do not publish private address, phone number, or unnecessary contact details in public SBT records.",
+    "verification_level": "resume_attested"
   },
-  "evidence_sections": {
+  "evidence_schema": {
+    "required_fields": [
+      "evidence_id",
+      "claim_id",
+      "credential_or_honor",
+      "issuing_organization",
+      "date_received",
+      "public_evidence_url",
+      "evidence_type",
+      "verification_level",
+      "preferred_claim_text"
+    ],
+    "optional_fields": [
+      "source_name",
+      "notes",
+      "related_resume_section"
+    ]
+  },
+  "evidence_items": [
+    {
+      "evidence_id": "evidence_nae_member_2023_asce_news",
+      "claim_id": "claim_nae_member_2023",
+      "credential_or_honor": "Election to the National Academy of Engineering",
+      "issuing_organization": "National Academy of Engineering",
+      "date_received": "2023",
+      "public_evidence_url": "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute/news/eva-lerner-lam-elected-to-the-national-academy-of-engineering",
+      "source_name": "ASCE T&DI News - Eva Lerner-Lam Elected to the National Academy of Engineering",
+      "evidence_type": "professional_society_news",
+      "verification_level": "public_record_verified",
+      "preferred_claim_text": "Eva Lerner-Lam was elected to the National Academy of Engineering in 2023.",
+      "related_resume_section": "awards_and_honors",
+      "notes": "This public ASCE T&DI news source supports the claim that Eva Lerner-Lam was elected to the National Academy of Engineering in 2023."
+    },
+    {
+      "evidence_id": "evidence_palisades_founder_president_asce_profile",
+      "claim_id": "claim_professional_role_palisades_founder_president",
+      "credential_or_honor": "Founder and President of Palisades Consulting Group, Inc.",
+      "issuing_organization": "Palisades Consulting Group, Inc.",
+      "date_received": "1988",
+      "public_evidence_url": "https://www.asce.org/publications-and-news/civil-engineering-source/authors/eva-lerner-lam",
+      "source_name": "ASCE Author Profile - Eva Lerner-Lam",
+      "evidence_type": "professional_society_author_profile",
+      "verification_level": "public_record_verified",
+      "preferred_claim_text": "Eva Lerner-Lam is the founder and president of Palisades Consulting Group, Inc.",
+      "related_resume_section": "employment_history",
+      "notes": "This ASCE-listed author profile publicly supports her professional role at Palisades Consulting Group, Inc."
+    },
+    {
+      "evidence_id": "evidence_princeton_senior_thesis_dataspace",
+      "claim_id": "claim_princeton_senior_thesis",
+      "credential_or_honor": "Princeton University senior thesis record",
+      "issuing_organization": "Princeton University",
+      "date_received": "1976",
+      "public_evidence_url": "https://dataspace.princeton.edu/handle/88435/dsp01pc289k046?mode=full",
+      "source_name": "Princeton DataSpace - Senior Thesis Record",
+      "evidence_type": "institutional_repository_record",
+      "verification_level": "public_institutional_record",
+      "preferred_claim_text": "Eva Lerner-Lam has a public Princeton University senior thesis record in Princeton DataSpace.",
+      "related_resume_section": "publications",
+      "notes": "This institutional repository record supports the existence of her Princeton senior thesis record."
+    }
+  ],
+  "resume_supported_sections": {
     "education": {
       "summary": "Lists Princeton University BA, MIT MS in Civil Engineering--Transportation Systems Division, UC Irvine management certificate, and MIT blockchain technologies certificate.",
+      "verification_level": "resume_attested",
       "supports_claims": [
         "claim_princeton_ba_1976",
         "claim_mit_ms_1978",
@@ -18,69 +87,59 @@
     },
     "employment_history": {
       "summary": "Lists Palisades Consulting Group, Inc. Founder and President beginning in 1988, along with earlier transportation planning and operations roles.",
+      "verification_level": "resume_attested",
       "supports_claims": [
         "claim_professional_role_palisades_founder_president"
       ]
     },
     "awards_and_honors": {
       "summary": "Lists 2023 National Academy of Engineering election and other ASCE, ITE, and transportation engineering awards.",
+      "verification_level": "resume_attested_with_selected_public_sources",
       "supports_claims": [
         "claim_nae_member_2023"
       ]
     },
     "boards": {
-      "summary": "Lists board service including SAE New York Metropolitan Section Executive Committee, ITE International Board of Direction, ASCE T&DI leadership, Princeton trusteeship, and NJ Transit board service."
+      "summary": "Lists board service including SAE New York Metropolitan Section Executive Committee, ITE International Board of Direction, ASCE T&DI leadership, Princeton trusteeship, and NJ Transit board service.",
+      "verification_level": "resume_attested",
+      "supports_claims": []
     },
     "selected_leadership_experience": {
       "summary": "Lists leadership in ASCE transportation policy, smart mobility for smart cities, conferences, webinars, workshops, transit security, and ITS standards-related efforts.",
+      "verification_level": "resume_attested",
       "supports_claims": [
         "claim_smart_mobility_smart_cities"
       ]
     },
     "professional_affiliations_service": {
       "summary": "Lists professional affiliations and service with ASCE, ITE, SAE, IEEE, ITS America, Transportation Research Board, and other organizations.",
+      "verification_level": "resume_attested",
       "supports_claims": [
         "claim_asce_transportation_leadership"
       ]
     },
     "publications": {
       "summary": "Lists peer-reviewed, academic, and miscellaneous publications related to ITS, transportation systems, transit security, infrastructure, and planning, including a Princeton senior thesis record.",
+      "verification_level": "resume_attested_with_selected_public_sources",
       "supports_claims": [
         "claim_princeton_senior_thesis"
       ]
     },
     "invited_presentations": {
-      "summary": "Lists invited presentations on smart cities, infrastructure, transportation systems, EV infrastructure, security, and related topics."
+      "summary": "Lists invited presentations on smart cities, infrastructure, transportation systems, EV infrastructure, security, and related topics.",
+      "verification_level": "resume_attested",
+      "supports_claims": []
     }
   },
-  "external_evidence": [
-    {
-      "claim_id": "claim_nae_member_2023",
-      "source_name": "ASCE T&DI News - Eva Lerner-Lam Elected to the National Academy of Engineering",
-      "source_url": "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute/news/eva-lerner-lam-elected-to-the-national-academy-of-engineering",
-      "source_type": "professional_society_news",
-      "verification_level": "public_record_verified",
-      "supports": "Eva Lerner-Lam's 2023 election to the National Academy of Engineering."
-    },
-    {
-      "claim_id": "claim_professional_role_palisades_founder_president",
-      "source_name": "ASCE Author Profile - Eva Lerner-Lam",
-      "source_url": "https://www.asce.org/publications-and-news/civil-engineering-source/authors/eva-lerner-lam",
-      "source_type": "professional_society_author_profile",
-      "verification_level": "public_record_verified",
-      "supports": "Eva Lerner-Lam's ASCE-listed author profile and founder/president role at Palisades Consulting Group Inc."
-    },
-    {
-      "claim_id": "claim_princeton_senior_thesis",
-      "source_name": "Princeton DataSpace - Senior Thesis Record",
-      "source_url": "https://dataspace.princeton.edu/handle/88435/dsp01pc289k046?mode=full",
-      "source_type": "institutional_repository_record",
-      "verification_level": "public_institutional_record",
-      "supports": "Public Princeton DataSpace repository record supporting Eva Lerner-Lam's senior thesis."
-    }
-  ],
   "verification_notes": {
-    "verification_level": "resume_attested_with_external_public_sources",
-    "meaning": "Core claims are based on the attached resume. Selected claims are strengthened with public professional-society sources and institutional repository records. Higher verification could be added later through institutional records, signed confirmation from the subject, DID signatures, ORCID, DOI records, NAE profile, ASCE profile, or other official sources."
+    "overall_verification_level": "resume_attested_with_external_public_sources",
+    "meaning": "Core claims are based on the attached resume. Selected claims are strengthened with public professional-society sources and institutional repository records. Higher verification could be added later through institutional records, signed confirmation from the subject, DID signatures, ORCID, DOI records, NAE profile, ASCE profile, or other official sources.",
+    "recommended_next_steps": [
+      "Add one evidence item for each major honor, board position, leadership role, publication, and credential.",
+      "Use official institutional sources where possible.",
+      "Keep private resume details out of public-facing SBT records.",
+      "Connect each evidence_id to a matching claim_id in the main SBT file."
+    ]
   }
 }
+```
