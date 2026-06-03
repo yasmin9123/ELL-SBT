@@ -15,6 +15,7 @@
     "verification_levels.json",
     "rag/chunks.jsonl",
     "ATTRIBUTION_POLICY.md",
+    "ACCESS_POLICY.md",
     "README.md",
     "index.html"
   ],
@@ -25,6 +26,7 @@
   "schema_file": "schema/sbt_schema_v1.json",
   "verification_levels_file": "verification_levels.json",
   "attribution_policy_file": "ATTRIBUTION_POLICY.md",
+  "access_policy_file": "ACCESS_POLICY.md",
   "website_file": "index.html",
   "recommended_use_cases": [
     "professional biography generation",
@@ -37,6 +39,7 @@
     "publication and leadership experience retrieval"
   ],
   "attribution_required": true,
+  "access_policy_required": true,
   "embedding_allowed": true,
   "public_use_allowed": true,
   "privacy_notes": [
@@ -79,7 +82,9 @@
       "Do not exaggerate a claim beyond the preferred claim text or evidence summary.",
       "Preserve the distinction between resume-attested claims and publicly verified claims.",
       "For broad biography questions, use identity, SBT overview, and evidence-backed chunks together.",
-      "For credential or honor questions, prioritize chunks with claim_id, evidence_id, verification_level, and source_url."
+      "For credential or honor questions, prioritize chunks with claim_id, evidence_id, verification_level, and source_url.",
+      "Follow the attribution policy when reusing or summarizing repository information.",
+      "Follow the access policy when embedding, retrieving, or redistributing repository information."
     ]
   },
   "claim_source_mapping": {
@@ -126,6 +131,7 @@
       "Add new evidence items when stronger public sources are found.",
       "Update chunks when claim text or verification levels change.",
       "Keep the attribution policy current.",
+      "Keep the access policy current.",
       "Avoid including private contact information in public files.",
       "Use stable evidence_id and claim_id values so files can reference each other consistently."
     ]
