@@ -1,4 +1,3 @@
-```json
 {
   "rag_target_id": "eva_lerner_lam_sbt_rag_target_v1",
   "name": "Eva Lerner-Lam SBT RAG Target",
@@ -47,4 +46,3 @@
     "claim_handling": "When a claim is only resume-attested, describe it as resume-supported rather than fully publicly verified."
   }
 }
-```
