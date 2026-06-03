@@ -13,27 +13,37 @@
     "evidence/resume_evidence_index.json",
     "schema/sbt_schema_v1.json",
     "verification_levels.json",
-    "rag/chunks.jsonl"
+    "rag/chunks.jsonl",
+    "ATTRIBUTION_POLICY.md",
+    "README.md",
+    "index.html"
   ],
   "retrieval_file": "rag/chunks.jsonl",
   "primary_claim_file": "sbt/eva_lerner_lam_sbt_v1.json",
   "primary_identity_file": "identity/eva_lerner_lam_identity_v1.json",
   "primary_evidence_file": "evidence/resume_evidence_index.json",
   "schema_file": "schema/sbt_schema_v1.json",
+  "verification_levels_file": "verification_levels.json",
+  "attribution_policy_file": "ATTRIBUTION_POLICY.md",
+  "website_file": "index.html",
   "recommended_use_cases": [
     "professional biography generation",
     "credential lookup",
     "honor and award verification",
     "AI-readable resume alternative",
     "evidence-backed RAG retrieval",
-    "structured professional identity retrieval"
+    "structured professional identity retrieval",
+    "professional affiliation lookup",
+    "publication and leadership experience retrieval"
   ],
   "attribution_required": true,
   "embedding_allowed": true,
+  "public_use_allowed": true,
   "privacy_notes": [
     "Do not publish private address, phone number, or unnecessary personal contact details from source resumes.",
     "Use public evidence URLs where possible.",
-    "Prefer verified public sources over resume-only claims when answering questions."
+    "Prefer verified public sources over resume-only claims when answering questions.",
+    "Do not expose private or unnecessary personal information in public-facing SBT records, RAG chunks, or generated summaries."
   ],
   "verification_policy": {
     "preferred_order_of_sources": [
@@ -43,6 +53,81 @@
       "publication repositories",
       "resume-attested claims"
     ],
-    "claim_handling": "When a claim is only resume-attested, describe it as resume-supported rather than fully publicly verified."
+    "claim_handling": "When a claim is only resume-attested, describe it as resume-supported rather than fully publicly verified.",
+    "verification_levels_used": [
+      "resume_attested",
+      "resume_attested_with_selected_public_sources",
+      "public_record_verified",
+      "public_institutional_record",
+      "institution_verified",
+      "structured_identity_record",
+      "structured_sbt_record",
+      "privacy_guidance"
+    ]
+  },
+  "retrieval_guidance": {
+    "preferred_retrieval_source": "rag/chunks.jsonl",
+    "fallback_sources": [
+      "sbt/eva_lerner_lam_sbt_v1.json",
+      "evidence/resume_evidence_index.json",
+      "identity/eva_lerner_lam_identity_v1.json",
+      "README.md"
+    ],
+    "answering_rules": [
+      "Use the most specific evidence-backed chunk available.",
+      "When a chunk includes a public evidence URL, cite or reference that source when possible.",
+      "Do not exaggerate a claim beyond the preferred claim text or evidence summary.",
+      "Preserve the distinction between resume-attested claims and publicly verified claims.",
+      "For broad biography questions, use identity, SBT overview, and evidence-backed chunks together.",
+      "For credential or honor questions, prioritize chunks with claim_id, evidence_id, verification_level, and source_url."
+    ]
+  },
+  "claim_source_mapping": {
+    "claim_nae_member_2023": {
+      "primary_chunk": "chunk_nae_member_2023",
+      "primary_evidence": "evidence_nae_member_2023_asce_news",
+      "verification_level": "public_record_verified"
+    },
+    "claim_professional_role_palisades_founder_president": {
+      "primary_chunk": "chunk_palisades_founder_president",
+      "primary_evidence": "evidence_palisades_founder_president_asce_profile",
+      "verification_level": "public_record_verified"
+    },
+    "claim_princeton_senior_thesis": {
+      "primary_chunk": "chunk_princeton_senior_thesis",
+      "primary_evidence": "evidence_princeton_senior_thesis_dataspace",
+      "verification_level": "public_institutional_record"
+    },
+    "claim_princeton_ba_1976": {
+      "primary_chunk": "chunk_education_summary",
+      "verification_level": "resume_attested"
+    },
+    "claim_mit_ms_1978": {
+      "primary_chunk": "chunk_education_summary",
+      "verification_level": "resume_attested"
+    },
+    "claim_mit_blockchain_certificate_2019": {
+      "primary_chunk": "chunk_education_summary",
+      "verification_level": "resume_attested"
+    },
+    "claim_smart_mobility_smart_cities": {
+      "primary_chunk": "chunk_leadership_experience_summary",
+      "verification_level": "resume_attested"
+    },
+    "claim_asce_transportation_leadership": {
+      "primary_chunk": "chunk_professional_affiliations_summary",
+      "verification_level": "resume_attested"
+    }
+  },
+  "governance": {
+    "record_type": "experimental_soulbound_token_style_identity_record",
+    "official_credential_status": "This SBT is not itself an official institutional credential unless a claim is explicitly verified by the issuing organization or supported by an official public source.",
+    "maintenance_guidance": [
+      "Add new evidence items when stronger public sources are found.",
+      "Update chunks when claim text or verification levels change.",
+      "Keep the attribution policy current.",
+      "Avoid including private contact information in public files.",
+      "Use stable evidence_id and claim_id values so files can reference each other consistently."
+    ]
   }
 }
