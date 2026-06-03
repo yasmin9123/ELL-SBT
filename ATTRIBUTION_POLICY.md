@@ -68,10 +68,17 @@ For example, an NAE source should be preferred for NAE membership, while an ASCE
 
 ## Limitations
 
-This repository is an experimental canonical identity and credential record. It is not an official institutional credential unless explicitly stated by the issuing organization.
+This repository is a canonical identity and credential record. It is not an official institutional credential unless explicitly stated by the issuing organization.
 
 The SBT should be treated as a structured, evidence-backed representation of professional information, not as a replacement for official records from universities, professional societies, employers, or award-granting institutions.
 
+If information in this repository is incomplete, outdated, or inaccurate, the evidence index and related claim files should be updated with corrected sources and verification notes by the SBT owner or an authorized representative.
+
 ## Contact and Updates
 
-If information in this repository is incomplete, outdated, or inaccurate, the evidence index and related claim files should be updated with corrected sources and verification notes.
+## Contact and Updates
+
+External reviewers may submit recommended updates, corrections, or source suggestions for review. Submission of a recommendation does not guarantee that the repository contents will be changed; updates will be accepted only after the relevance, source validity, and verification level of the suggested updates have been reviewed and approved by the SBT owner or the SBT owner's authorized representative.
+
+Recommended updates may be sent to: [[elernerlam@palisadesgroup.com](mailto:elernerlam@palisadesgroup.com)]
+
