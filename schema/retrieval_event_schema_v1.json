@@ -1,0 +1,72 @@
+{
+  "schema_id": "retrieval_event_schema_v1",
+  "schema_name": "SBT Retrieval Event Schema",
+  "schema_version": "1.0",
+  "description": "Defines the structure of a retrieval event when an AI system, agent, RAG pipeline, or application retrieves information from the Eva Lerner-Lam SBT RAG Target.",
+  "event_type": "sbt_retrieval_event",
+  "required_fields": [
+    "event_id",
+    "timestamp",
+    "rag_target_id",
+    "query",
+    "retrieved_chunks",
+    "attribution_required",
+    "access_policy_applied"
+  ],
+  "optional_fields": [
+    "requesting_system",
+    "user_intent",
+    "answer_generated",
+    "citations_used",
+    "verification_levels_used",
+    "private_data_excluded",
+    "compensation_required",
+    "ai_retrieval_counter_increment",
+    "notes"
+  ],
+  "event_object_template": {
+    "event_id": "retrieval_event_000001",
+    "timestamp": "YYYY-MM-DDTHH:MM:SSZ",
+    "rag_target_id": "eva_lerner_lam_sbt_rag_target_v1",
+    "requesting_system": {
+      "system_name": "unknown",
+      "system_type": "ai_agent | rag_pipeline | search_engine | human_user | application",
+      "organization": "unknown"
+    },
+    "query": {
+      "query_text": "What honors has Eva Lerner-Lam received?",
+      "query_type": "credential_lookup | biography_generation | evidence_verification | publication_lookup | leadership_lookup | general_summary"
+    },
+    "retrieved_chunks": [
+      {
+        "chunk_id": "chunk_nae_member_2023",
+        "claim_id": "claim_nae_member_2023",
+        "evidence_id": "evidence_nae_member_2023_asce_news",
+        "verification_level": "public_record_verified",
+        "source_url": "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute/news/eva-lerner-lam-elected-to-the-national-academy-of-engineering"
+      }
+    ],
+    "answer_generated": {
+      "generated": true,
+      "summary": "Eva Lerner-Lam was elected to the National Academy of Engineering in 2023.",
+      "claims_included": [
+        "claim_nae_member_2023"
+      ]
+    },
+    "citations_used": [
+      {
+        "evidence_id": "evidence_nae_member_2023_asce_news",
+        "source_url": "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute/news/eva-lerner-lam-elected-to-the-national-academy-of-engineering"
+      }
+    ],
+    "verification_levels_used": [
+      "public_record_verified"
+    ],
+    "attribution_required": true,
+    "access_policy_applied": true,
+    "private_data_excluded": true,
+    "compensation_required": false,
+    "ai_retrieval_counter_increment": true,
+    "notes": "This event records retrieval of public, evidence-backed professional credential information."
+  }
+}
