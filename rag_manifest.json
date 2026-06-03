@@ -12,6 +12,7 @@
     "sbt/eva_lerner_lam_sbt_v1.json",
     "evidence/resume_evidence_index.json",
     "schema/sbt_schema_v1.json",
+    "schema/retrieval_event_schema_v1.json",
     "verification_levels.json",
     "rag/chunks.jsonl",
     "ATTRIBUTION_POLICY.md",
@@ -24,6 +25,7 @@
   "primary_identity_file": "identity/eva_lerner_lam_identity_v1.json",
   "primary_evidence_file": "evidence/resume_evidence_index.json",
   "schema_file": "schema/sbt_schema_v1.json",
+  "retrieval_event_schema_file": "schema/retrieval_event_schema_v1.json",
   "verification_levels_file": "verification_levels.json",
   "attribution_policy_file": "ATTRIBUTION_POLICY.md",
   "access_policy_file": "ACCESS_POLICY.md",
@@ -36,10 +38,12 @@
     "evidence-backed RAG retrieval",
     "structured professional identity retrieval",
     "professional affiliation lookup",
-    "publication and leadership experience retrieval"
+    "publication and leadership experience retrieval",
+    "governed AI retrieval logging"
   ],
   "attribution_required": true,
   "access_policy_required": true,
+  "retrieval_event_logging_supported": true,
   "embedding_allowed": true,
   "public_use_allowed": true,
   "privacy_notes": [
@@ -74,7 +78,9 @@
       "sbt/eva_lerner_lam_sbt_v1.json",
       "evidence/resume_evidence_index.json",
       "identity/eva_lerner_lam_identity_v1.json",
-      "README.md"
+      "README.md",
+      "ATTRIBUTION_POLICY.md",
+      "ACCESS_POLICY.md"
     ],
     "answering_rules": [
       "Use the most specific evidence-backed chunk available.",
@@ -84,8 +90,30 @@
       "For broad biography questions, use identity, SBT overview, and evidence-backed chunks together.",
       "For credential or honor questions, prioritize chunks with claim_id, evidence_id, verification_level, and source_url.",
       "Follow the attribution policy when reusing or summarizing repository information.",
-      "Follow the access policy when embedding, retrieving, or redistributing repository information."
+      "Follow the access policy when embedding, retrieving, or redistributing repository information.",
+      "When retrieval logging is supported, record retrieved chunks, claim IDs, evidence IDs, verification levels, citation use, attribution requirement, and private-data exclusion."
     ]
+  },
+  "retrieval_event_policy": {
+    "schema": "schema/retrieval_event_schema_v1.json",
+    "event_type": "sbt_retrieval_event",
+    "logging_purpose": "To support accountable AI retrieval, attribution, evidence traceability, verification-level tracking, and privacy-aware use of the SBT RAG target.",
+    "recommended_logged_fields": [
+      "event_id",
+      "timestamp",
+      "rag_target_id",
+      "query",
+      "retrieved_chunks",
+      "claim_ids",
+      "evidence_ids",
+      "verification_levels_used",
+      "citations_used",
+      "attribution_required",
+      "access_policy_applied",
+      "private_data_excluded",
+      "ai_retrieval_counter_increment"
+    ],
+    "private_data_logging_rule": "Do not log private addresses, phone numbers, or unnecessary personal contact details."
   },
   "claim_source_mapping": {
     "claim_nae_member_2023": {
@@ -132,6 +160,7 @@
       "Update chunks when claim text or verification levels change.",
       "Keep the attribution policy current.",
       "Keep the access policy current.",
+      "Keep the retrieval event schema current.",
       "Avoid including private contact information in public files.",
       "Use stable evidence_id and claim_id values so files can reference each other consistently."
     ]
