@@ -1,44 +1,50 @@
+```json
 {
+  "rag_target_id": "eva_lerner_lam_sbt_rag_target_v1",
   "name": "Eva Lerner-Lam SBT RAG Target",
-  "version": "1.0",
-  "description": "A public, machine-readable Soulbound Token profile for evidence-backed question answering about Eva Lerner-Lam's credentials, roles, education, and verification metadata.",
+  "description": "A structured, evidence-backed, AI-readable identity and credential record for Eva Lerner-Lam.",
   "subject": {
-    "display_name": "Eva Lerner-Lam"
+    "display_name": "Eva Lerner-Lam",
+    "canonical_id": "eva_lerner_lam"
   },
-  "canonical_files": [
-    {
-      "type": "sbt",
-      "path": "sbt/eva_lerner_lam_sbt_v1.json",
-      "purpose": "Main structured SBT claims file."
-    },
-    {
-      "type": "identity",
-      "path": "identity/eva_lerner_lam_identity_v1.json",
-      "purpose": "Canonical identity profile for the SBT subject."
-    },
-    {
-      "type": "evidence_index",
-      "path": "evidence/resume_evidence_index.json",
-      "purpose": "Evidence objects supporting the SBT claims."
-    },
-    {
-      "type": "schema",
-      "path": "schema/sbt_schema_v1.json",
-      "purpose": "Schema defining the SBT structure."
-    }
+  "version": "1.0",
+  "entry_points": [
+    "identity/eva_lerner_lam_identity_v1.json",
+    "sbt/eva_lerner_lam_sbt_v1.json",
+    "evidence/resume_evidence_index.json",
+    "schema/sbt_schema_v1.json",
+    "verification_levels.json",
+    "rag/chunks.jsonl"
   ],
-  "rag_rules": {
-    "answer_only_from_sources": true,
-    "cite_claim_ids": true,
-    "cite_evidence_ids": true,
-    "do_not_invent_claims": true,
-    "state_when_evidence_is_missing": true
-  },
-  "recommended_questions": [
-    "What credentials are listed in this SBT?",
-    "Which claims are publicly verifiable?",
-    "What evidence supports the Princeton education claim?",
-    "Summarize the subject's transportation engineering background.",
-    "Which claims have the strongest verification level?"
-  ]
+  "retrieval_file": "rag/chunks.jsonl",
+  "primary_claim_file": "sbt/eva_lerner_lam_sbt_v1.json",
+  "primary_identity_file": "identity/eva_lerner_lam_identity_v1.json",
+  "primary_evidence_file": "evidence/resume_evidence_index.json",
+  "schema_file": "schema/sbt_schema_v1.json",
+  "recommended_use_cases": [
+    "professional biography generation",
+    "credential lookup",
+    "honor and award verification",
+    "AI-readable resume alternative",
+    "evidence-backed RAG retrieval",
+    "structured professional identity retrieval"
+  ],
+  "attribution_required": true,
+  "embedding_allowed": true,
+  "privacy_notes": [
+    "Do not publish private address, phone number, or unnecessary personal contact details from source resumes.",
+    "Use public evidence URLs where possible.",
+    "Prefer verified public sources over resume-only claims when answering questions."
+  ],
+  "verification_policy": {
+    "preferred_order_of_sources": [
+      "public institutional records",
+      "professional society records",
+      "official organizational profiles",
+      "publication repositories",
+      "resume-attested claims"
+    ],
+    "claim_handling": "When a claim is only resume-attested, describe it as resume-supported rather than fully publicly verified."
+  }
 }
+```
