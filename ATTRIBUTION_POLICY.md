@@ -49,7 +49,6 @@ This repository should not be used to expose private or unnecessary personal inf
 
 Public-facing records should focus on professional identity, credentials, honors, roles, affiliations, publications, and evidence-backed claims.
 
-Private addresses, phone numbers, and unnecessary contact details should not be copied into public SBT records, RAG chunks, or AI-generated summaries.
 
 ## Preferred Citation Behavior
 
