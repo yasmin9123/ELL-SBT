@@ -76,6 +76,8 @@
       "verification_level": "public_institutional_record",
       "preferred_claim_text": "Eva Lerner-Lam has a public Princeton University senior thesis record in Princeton DataSpace.",
       "related_resume_section": "publications",
+      "authority_basis": "Princeton DataSpace is Princeton University's institutional repository and is directly authoritative for records contained in that repository.",
+      "verification_scope": "Confirms the existence of Eva Lerner-Lam's Princeton senior thesis record. It does not independently verify every broader academic or biographical claim associated with her Princeton education.",
       "notes": "This institutional repository record supports the existence of her Princeton senior thesis record."
     },
     {
@@ -115,7 +117,7 @@
       "authority_basis": "The public transportation-operations publication record directly identifies Eva Lerner-Lam as an author of the module.",
       "verification_scope": "Confirms authorship of Module 14 and its public issue date. It does not independently establish the precise subcontract, payment, or contractual chain through which the work was performed.",
       "contract_context": "User-supplied background indicates that the work involved the Institute of Transportation Engineers under a United States Department of Transportation or Federal Highway Administration contract framework. This contractual detail should remain separately labeled as resume-attested or user-supplied until supported by a public contract, task-order, institutional, or signed source.",
-      "notes": "Earlier working notes referred to Module 13. The public source reviewed identifies Eva Lerner-Lam as an author of Module 14, not Module 13."
+      "notes": "Earlier working notes referred to Module 13. The public source identifies Eva Lerner-Lam as an author of Module 14."
     }
   ],
   "resume_supported_sections": {
@@ -125,6 +127,7 @@
       "supports_claims": [
         "claim_princeton_ba_1976",
         "claim_mit_ms_1978",
+        "claim_uc_irvine_certificate_1981",
         "claim_mit_blockchain_certificate_2019"
       ]
     },
