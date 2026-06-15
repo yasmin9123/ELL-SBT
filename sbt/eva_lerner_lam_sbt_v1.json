@@ -63,6 +63,23 @@
       "confidence": 0.9
     },
     {
+      "claim_id": "claim_princeton_senior_thesis",
+      "claim_type": "academic_publication",
+      "value": "Princeton University senior thesis record",
+      "institution": "Princeton University",
+      "year": 1976,
+      "description": "Eva Lerner-Lam has a publicly accessible Princeton University senior thesis record in Princeton DataSpace.",
+      "authority_basis": "Princeton DataSpace is Princeton University's institutional repository and is directly authoritative for records held in that repository.",
+      "verification_scope": "The public institutional record verifies the existence of Eva Lerner-Lam's Princeton senior thesis record. It does not, by itself, independently verify every biographical or academic detail associated with her broader Princeton education.",
+      "evidence": [
+        "../evidence/resume_evidence_index.json#publications",
+        "../evidence/resume_evidence_index.json#evidence_princeton_senior_thesis_dataspace"
+      ],
+      "external_source_url": "https://dataspace.princeton.edu/handle/88435/dsp01pc289k046?mode=full",
+      "verification_level": "public_institutional_record",
+      "confidence": 0.98
+    },
+    {
       "claim_id": "claim_mit_ms_1978",
       "claim_type": "education",
       "institution": "Massachusetts Institute of Technology",
@@ -150,7 +167,7 @@
     "subject_approval": "pending",
     "did_signature": "pending",
     "external_public_records": "partially_added",
-    "notes": "The NAE election claim, Palisades founder and president claim, ASCE continuing-education instructor claim, and ITS ePrimer Module 14 authorship claim include public supporting records. Other claims remain resume-attested unless separate evidence is listed. The precise contractual pathway for the ePrimer work remains unverified by the currently listed public source."
+    "notes": "The NAE election claim, Palisades founder and president claim, Princeton senior thesis record, ASCE continuing-education instructor claim, and ITS ePrimer Module 14 authorship claim include public supporting records. Other claims remain resume-attested unless separate evidence is listed. The precise contractual pathway for the ePrimer work remains unverified by the currently listed public source."
   },
   "cryptographic_verification": {
     "status": "pending_subject_approval",
@@ -179,7 +196,7 @@
     "source_status": "attached_to_creator_workflow",
     "created_for_repository": "ELL-SBT",
     "privacy_note": "Private address, phone number, and unnecessary personal contact information from the source resume are intentionally excluded from this public SBT record.",
-    "update_note": "Version 1.1 adds an ASCE continuing-education instructor claim and a publicly supported ITS ePrimer Module 14 authorship claim."
+    "update_note": "Version 1.1 adds a Princeton senior thesis claim, an ASCE continuing-education instructor claim, and a publicly supported ITS ePrimer Module 14 authorship claim."
   },
   "created_at": "2026-05-11",
   "last_updated": "2026-06-15"
