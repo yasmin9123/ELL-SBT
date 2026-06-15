@@ -1,7 +1,8 @@
+```json
 {
   "object_id": "sbt_eva_lerner_lam_v1",
   "object_type": "soulbound_token_record",
-  "sbt_version": "1.0",
+  "sbt_version": "1.1",
   "status": "active",
   "transferability": {
     "transferable": false,
@@ -30,7 +31,7 @@
       "start_year": 1988,
       "evidence": [
         "../evidence/resume_evidence_index.json#employment_history",
-        "../evidence/resume_evidence_index.json#external_evidence"
+        "../evidence/resume_evidence_index.json#evidence_palisades_founder_president_asce_profile"
       ],
       "external_source_url": "https://www.asce.org/publications-and-news/civil-engineering-source/authors/eva-lerner-lam",
       "verification_level": "public_record_verified",
@@ -44,7 +45,7 @@
       "description": "Elected for accelerating adoption of intelligent transportation systems and smart cities codes and standards into engineering practice.",
       "evidence": [
         "../evidence/resume_evidence_index.json#awards_and_honors",
-        "../evidence/resume_evidence_index.json#external_evidence"
+        "../evidence/resume_evidence_index.json#evidence_nae_member_2023_asce_news"
       ],
       "external_source_url": "https://www.asce.org/communities/institutes-and-technical-groups/transportation-and-development-institute/news/eva-lerner-lam-elected-to-the-national-academy-of-engineering",
       "verification_level": "public_record_verified",
@@ -108,6 +109,40 @@
       "evidence": "../evidence/resume_evidence_index.json#selected_leadership_experience",
       "verification_level": "resume_attested",
       "confidence": 0.9
+    },
+    {
+      "claim_id": "claim_asce_continuing_education_instructor",
+      "claim_type": "professional_instruction",
+      "value": "Continuing-education instructor",
+      "organization": "American Society of Civil Engineers",
+      "description": "Eva Lerner-Lam has an official instructor profile in the American Society of Civil Engineers continuing-education system.",
+      "authority_basis": "The American Society of Civil Engineers is directly authoritative for identifying individuals listed in its instructor directory.",
+      "verification_scope": "The public profile verifies Eva Lerner-Lam's inclusion in the ASCE instructor directory. Specific course titles, webinar dates, and individual teaching engagements require their own supporting course or event records.",
+      "evidence": [
+        "../evidence/resume_evidence_index.json#teaching_and_instruction",
+        "../evidence/resume_evidence_index.json#evidence_asce_continuing_education_instructor_profile"
+      ],
+      "external_source_url": "https://www.asce.org/education-and-events/explore-education/instructors/eva-lerner-lam",
+      "verification_level": "public_record_verified",
+      "confidence": 0.98
+    },
+    {
+      "claim_id": "claim_its_eprimer_module_14_author",
+      "claim_type": "instructional_material_authorship",
+      "value": "Author of ITS ePrimer Module 14: ITS Emerging Opportunities and Challenges",
+      "organization": "United States Department of Transportation Intelligent Transportation Systems Joint Program Office",
+      "coauthor": "Nathan E. Keyes",
+      "publication_date": "2015-08-04",
+      "description": "Eva Lerner-Lam is publicly listed as an author, with Nathan E. Keyes, of Module 14 of the Intelligent Transportation Systems ePrimer.",
+      "authority_basis": "A public transportation-operations publication record directly identifies Eva Lerner-Lam as an author of the module.",
+      "verification_scope": "The public record verifies authorship of Module 14 and its issue date. The precise ITE subcontract or federal contract relationship is not treated as independently verified without a public contract, task order, institutional confirmation, or signed supporting record.",
+      "evidence": [
+        "../evidence/resume_evidence_index.json#publications_and_instructional_materials",
+        "../evidence/resume_evidence_index.json#evidence_its_eprimer_module_14_author"
+      ],
+      "external_source_url": "https://www.transportationops.org/publications/its-eprimer-module-14-its-emerging-opportunities-and-challenges",
+      "verification_level": "public_record_verified",
+      "confidence": 0.98
     }
   ],
   "verification_status": {
@@ -115,7 +150,7 @@
     "subject_approval": "pending",
     "did_signature": "pending",
     "external_public_records": "partially_added",
-    "notes": "The NAE election claim and Palisades founder/president claim include public ASCE source links. Other claims are currently resume-attested and can be strengthened later with institutional or organizational sources."
+    "notes": "The NAE election claim, Palisades founder and president claim, ASCE continuing-education instructor claim, and ITS ePrimer Module 14 authorship claim include public supporting records. Other claims remain resume-attested unless separate evidence is listed. The precise contractual pathway for the ePrimer work remains unverified by the currently listed public source."
   },
   "cryptographic_verification": {
     "status": "pending_subject_approval",
@@ -140,11 +175,13 @@
   },
   "provenance": {
     "source_document": "Eva Lerner-Lam Resume, dated 20 April 2024",
-    "source_type": "resume",
+    "source_type": "resume_with_selected_external_public_sources",
     "source_status": "attached_to_creator_workflow",
     "created_for_repository": "ELL-SBT",
-    "privacy_note": "Private address, phone number, and unnecessary personal contact information from the source resume are intentionally excluded from this public SBT record."
+    "privacy_note": "Private address, phone number, and unnecessary personal contact information from the source resume are intentionally excluded from this public SBT record.",
+    "update_note": "Version 1.1 adds an ASCE continuing-education instructor claim and a publicly supported ITS ePrimer Module 14 authorship claim."
   },
   "created_at": "2026-05-11",
-  "last_updated": "2026-05-11"
+  "last_updated": "2026-06-15"
 }
+```
