@@ -2,11 +2,11 @@
 {
   "object_id": "sbt_eva_lerner_lam_v1",
   "object_type": "soulbound_token_record",
-  "sbt_version": "1.1",
+  "sbt_version": "1.2",
   "status": "active",
   "transferability": {
     "transferable": false,
-    "description": "This record is soulbound/non-transferable and represents professional identity and credential claims for Eva Lerner-Lam."
+    "description": "This record is soulbound/non-transferable in purpose and represents professional identity and credential claims for Eva Lerner-Lam. It is currently an off-chain SBT-style record and has not been minted as a blockchain token."
   },
   "subject": {
     "display_name": "Eva Lerner-Lam",
@@ -20,7 +20,7 @@
     "issuer_type": "repository_creator",
     "issuer_role": "SBT object implementer",
     "repository": "ELL-SBT",
-    "verification_note": "This record was structured by the repository creator using resume-based evidence and selected public sources. It has not yet been cryptographically signed by the subject."
+    "verification_note": "This record was structured by the repository creator using resume-based evidence, selected public sources, and selected private documentary evidence. It has not yet been cryptographically signed by the subject."
   },
   "claims": [
     {
@@ -70,7 +70,7 @@
       "year": 1976,
       "description": "Eva Lerner-Lam has a publicly accessible Princeton University senior thesis record in Princeton DataSpace.",
       "authority_basis": "Princeton DataSpace is Princeton University's institutional repository and is directly authoritative for records held in that repository.",
-      "verification_scope": "The public institutional record verifies the existence of Eva Lerner-Lam's Princeton senior thesis record. It does not, by itself, independently verify every biographical or academic detail associated with her broader Princeton education.",
+      "verification_scope": "The record verifies the existence of Eva Lerner-Lam's senior thesis record. It does not independently verify every broader academic or biographical claim associated with her Princeton education.",
       "evidence": [
         "../evidence/resume_evidence_index.json#publications",
         "../evidence/resume_evidence_index.json#evidence_princeton_senior_thesis_dataspace"
@@ -130,11 +130,11 @@
     {
       "claim_id": "claim_asce_continuing_education_instructor",
       "claim_type": "professional_instruction",
-      "value": "Continuing-education instructor",
+      "role": "Continuing-Education Instructor",
       "organization": "American Society of Civil Engineers",
       "description": "Eva Lerner-Lam has an official instructor profile in the American Society of Civil Engineers continuing-education system.",
       "authority_basis": "The American Society of Civil Engineers is directly authoritative for identifying individuals listed in its instructor directory.",
-      "verification_scope": "The public profile verifies Eva Lerner-Lam's inclusion in the ASCE instructor directory. Specific course titles, webinar dates, and individual teaching engagements require their own supporting course or event records.",
+      "verification_scope": "The public profile verifies Eva Lerner-Lam's inclusion in the ASCE instructor directory. Specific course titles, credit amounts, dates, delivery formats, and assessments require separate course-page evidence.",
       "evidence": [
         "../evidence/resume_evidence_index.json#teaching_and_instruction",
         "../evidence/resume_evidence_index.json#evidence_asce_continuing_education_instructor_profile"
@@ -144,15 +144,92 @@
       "confidence": 0.98
     },
     {
+      "claim_id": "claim_asce_webinar_2024",
+      "claim_type": "continuing_education_instruction",
+      "role": "Instructor",
+      "course_title": "Electrifying the Transportation Grid and Railway Applications of Automation and Artificial Intelligence",
+      "institution_or_provider": "American Society of Civil Engineers",
+      "delivery_format": "On-demand recorded webinar",
+      "recorded_year": 2024,
+      "continuing_education_credit": {
+        "continuing_education_units": 0.2,
+        "professional_development_hours": 2,
+        "completion_assessment": "Post-test"
+      },
+      "authority_basis": "User-supplied ASCE course-page details combined with Eva Lerner-Lam's publicly verified ASCE instructor profile.",
+      "verification_scope": "The general ASCE instructor status is publicly verified. The exact course title, year, delivery format, CEU and PDH amounts, and assessment details remain pending capture of the ASCE course page.",
+      "evidence": [
+        "../evidence/resume_evidence_index.json#evidence_asce_continuing_education_instructor_profile",
+        "../evidence/resume_evidence_index.json#evidence_asce_webinar_2024_course_details"
+      ],
+      "verification_level": "resume_attested",
+      "verification_status": "official_instructor_profile_verified_course_details_pending_document_capture",
+      "confidence": 0.86,
+      "caveat": "Add a captured ASCE course page, screenshot, PDF export, receipt, or archived listing before describing all course details as publicly verified."
+    },
+    {
+      "claim_id": "claim_its_eprimer_module_13_author",
+      "claim_type": "instructional_materials_development",
+      "role": "Module Author and Educational Content Developer",
+      "project_title": "Intelligent Transportation Systems ePrimer",
+      "specific_assignment": "Module 13 - Emerging Issues",
+      "organization": "Institute of Transportation Engineers",
+      "contract_reference": {
+        "prime_contract": "DTFH61-06-D-00042",
+        "task_order_number": "IT42-025",
+        "ite_reference_number": "ITE-12-14.01",
+        "task_name": "ITS E-Primer Development",
+        "period_of_performance": "2012-10-16 through 2013-10-01"
+      },
+      "contracting_entities": {
+        "client_framework": "United States Department of Transportation / Federal Highway Administration",
+        "prime_or_administering_organization": "Institute of Transportation Engineers",
+        "partner_organizations_identified_in_scope": [
+          "Intelligent Transportation Systems Joint Program Office",
+          "Institute of Transportation Engineers",
+          "Intelligent Transportation Society of America",
+          "American Public Transportation Association"
+        ],
+        "subcontractor": "Eva Lerner-Lam"
+      },
+      "educational_use": {
+        "target_audience": [
+          "public-sector transportation practitioners",
+          "private-sector transportation practitioners",
+          "academicians",
+          "students",
+          "vendors",
+          "decision makers",
+          "public officials"
+        ],
+        "stated_use": [
+          "stand-alone practitioner reference document",
+          "text for education and training programs",
+          "PowerPoint slides with instructor notes for university-level teaching use"
+        ]
+      },
+      "description": "An ITE Task Order identifies Eva Lerner-Lam as the subcontractor, Key Personnel, and module author for Module 13 - Emerging Issues of the ITS ePrimer. The work included development of module text, multimedia integration, illustrations and figures, review responses, final module materials, and detailed PowerPoint slides with instructor notes for university-level teaching use.",
+      "authority_basis": "ITE Task Order IT42-025 and Master Services Agreement ITE-12-14 under the FHWA prime-contract framework.",
+      "verification_scope": "Confirms the contractual assignment, module-author role, Key Personnel designation, contract framework, period of performance, and educational-material deliverables.",
+      "evidence": [
+        "../evidence/resume_evidence_index.json#evidence_ite_task_order_it42_025_module_13",
+        "../evidence/resume_evidence_index.json#evidence_ite_master_services_agreement_2012"
+      ],
+      "verification_level": "contract_document_supported",
+      "confidence": 0.96,
+      "caveat": "This role is best characterized as educational module authorship and instructional-materials development, not necessarily direct classroom instruction."
+    },
+    {
       "claim_id": "claim_its_eprimer_module_14_author",
       "claim_type": "instructional_material_authorship",
+      "role": "Module Author",
       "value": "Author of ITS ePrimer Module 14: ITS Emerging Opportunities and Challenges",
       "organization": "United States Department of Transportation Intelligent Transportation Systems Joint Program Office",
       "coauthor": "Nathan E. Keyes",
       "publication_date": "2015-08-04",
       "description": "Eva Lerner-Lam is publicly listed as an author, with Nathan E. Keyes, of Module 14 of the Intelligent Transportation Systems ePrimer.",
       "authority_basis": "A public transportation-operations publication record directly identifies Eva Lerner-Lam as an author of the module.",
-      "verification_scope": "The public record verifies authorship of Module 14 and its issue date. The precise ITE subcontract or federal contract relationship is not treated as independently verified without a public contract, task order, institutional confirmation, or signed supporting record.",
+      "verification_scope": "The public record verifies authorship of Module 14 and its issue date. It is separate from the earlier ITE contractual assignment for Module 13.",
       "evidence": [
         "../evidence/resume_evidence_index.json#publications_and_instructional_materials",
         "../evidence/resume_evidence_index.json#evidence_its_eprimer_module_14_author"
@@ -160,14 +237,55 @@
       "external_source_url": "https://www.transportationops.org/publications/its-eprimer-module-14-its-emerging-opportunities-and-challenges",
       "verification_level": "public_record_verified",
       "confidence": 0.98
+    },
+    {
+      "claim_id": "claim_njit_urban_transportation_lecturer",
+      "claim_type": "academic_instruction",
+      "role": "Lecturer",
+      "course_or_subject": "Urban Transportation Planning",
+      "institution": "New Jersey Institute of Technology",
+      "program": "Graduate Program in Transportation",
+      "start_year": 1989,
+      "end_year": 1990,
+      "description": "Eva Lerner-Lam served as a lecturer in Urban Transportation Planning in the New Jersey Institute of Technology Graduate Program in Transportation from 1989 to 1990.",
+      "authority_basis": "Subject resume pending independent NJIT documentation.",
+      "verification_scope": "Currently verifies only that the role and date range are asserted in the source professional record.",
+      "evidence": [
+        "../evidence/resume_evidence_index.json#teaching_and_instruction",
+        "../evidence/resume_evidence_index.json#evidence_njit_urban_transportation_lecturer_resume"
+      ],
+      "verification_level": "resume_attested",
+      "confidence": 0.9,
+      "caveat": "Do not describe this as a publicly institution-verified NJIT faculty appointment until an NJIT record is added."
+    },
+    {
+      "claim_id": "claim_palisades_summer_session_2024_instructor",
+      "claim_type": "certificate_course_instruction",
+      "role": "Instructor or Lecturer",
+      "program_title": "Palisades Consulting Group Summer Session 2024 Certificate Course",
+      "administering_organization": "Palisades Consulting Group, Inc.",
+      "venue": "Tenafly Prep Academy",
+      "date": "2024-08",
+      "program_context": "President's Volunteer Service Award program context",
+      "description": "Eva Lerner-Lam served as an instructor or lecturer for a Palisades Consulting Group Summer Session 2024 certificate course conducted at Tenafly Prep Academy.",
+      "authority_basis": "Subject- or organization-supplied program information pending supporting program materials or signed organizational confirmation.",
+      "verification_scope": "Supports a Palisades-administered instructional role. Tenafly Prep Academy is described as the venue, and the President's Volunteer Service Award is described only as program context.",
+      "evidence": [
+        "../evidence/resume_evidence_index.json#teaching_and_instruction",
+        "../evidence/resume_evidence_index.json#evidence_palisades_summer_session_2024"
+      ],
+      "verification_level": "resume_attested",
+      "confidence": 0.88,
+      "caveat": "Do not imply that Tenafly Prep Academy issued or accredited the certificate, or that the President's Volunteer Service Award program accredited the course, unless documentation specifically establishes that."
     }
   ],
   "verification_status": {
-    "current_level": "resume_attested_with_selected_public_record_verification",
+    "current_level": "resume_attested_with_selected_public_contract_and_institutional_verification",
     "subject_approval": "pending",
     "did_signature": "pending",
     "external_public_records": "partially_added",
-    "notes": "The NAE election claim, Palisades founder and president claim, Princeton senior thesis record, ASCE continuing-education instructor claim, and ITS ePrimer Module 14 authorship claim include public supporting records. Other claims remain resume-attested unless separate evidence is listed. The precise contractual pathway for the ePrimer work remains unverified by the currently listed public source."
+    "private_documentary_records": "partially_added",
+    "notes": "The NAE election, Palisades founder and president role, Princeton senior thesis record, general ASCE instructor role, ITS ePrimer Module 13 contractual assignment, and ITS ePrimer Module 14 authorship have documentary or public support. The specific 2024 ASCE webinar details remain pending course-page capture. The NJIT lecturer and Palisades Summer Session claims remain resume-, subject-, or organization-attested pending additional records."
   },
   "cryptographic_verification": {
     "status": "pending_subject_approval",
@@ -188,15 +306,20 @@
     "retrieval_use_allowed": true,
     "commercial_use_requires_permission": true,
     "compensation_required": "not_specified",
-    "audit_logging_recommended": true
+    "audit_logging_recommended": true,
+    "private_evidence_retrieval": "Private contract documents may be used to verify claims but should not be exposed publicly without authorization and redaction."
   },
   "provenance": {
     "source_document": "Eva Lerner-Lam Resume, dated 20 April 2024",
-    "source_type": "resume_with_selected_external_public_sources",
+    "source_type": "resume_with_selected_external_public_and_private_documentary_sources",
     "source_status": "attached_to_creator_workflow",
     "created_for_repository": "ELL-SBT",
-    "privacy_note": "Private address, phone number, and unnecessary personal contact information from the source resume are intentionally excluded from this public SBT record.",
-    "update_note": "Version 1.1 adds a Princeton senior thesis claim, an ASCE continuing-education instructor claim, and a publicly supported ITS ePrimer Module 14 authorship claim."
+    "private_supporting_documents": [
+      "ITE12-14.01_IT42-025_Lerner-Lam.doc",
+      "MSA ITE 12-14.doc"
+    ],
+    "privacy_note": "Private addresses, telephone numbers, personal email addresses, signatures, compensation terms, tax information, and unnecessary personal details are intentionally excluded from this public SBT record.",
+    "update_note": "Version 1.2 adds the specific 2024 ASCE webinar claim, the contract-supported ITS ePrimer Module 13 authorship and instructional-materials-development claim, the NJIT lecturer claim, the Palisades Summer Session 2024 instructional claim, and retains the separate public Module 14 authorship claim."
   },
   "created_at": "2026-05-11",
   "last_updated": "2026-06-15"
