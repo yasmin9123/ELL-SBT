@@ -1,0 +1,24 @@
+{
+  "ledger_type": "Private SBT Audit Ledger",
+  "ledger_version": "1.0",
+  "subject": {
+    "name": "Eva Lerner-Lam",
+    "sbt_id": "eva_lerner_lam_sbt_v1"
+  },
+  "records": [
+    {
+      "record_id": "ell_sbt_anchor_001",
+      "timestamp": "2026-06-28",
+      "action": "SBT evidence record created and anchored",
+      "sbt_file": "sbt/eva_lerner_lam_sbt_v1.json",
+      "evidence_file": "evidence/resume_evidence_index.json",
+      "identity_file": "identity/eva_lerner_lam_identity_v1.json",
+      "sbt_hash_sha256": "PASTE_SBT_HASH_HERE",
+      "evidence_hash_sha256": "PASTE_EVIDENCE_HASH_HERE",
+      "storage_location": "GitHub repository",
+      "verification_method": "Compare the current SHA-256 hash of each file against the recorded hash.",
+      "issuer": "Yasmin Korin",
+      "notes": "This is a private GitHub-based audit ledger for demonstrating hash-anchored SBT verification before migration to a public or permissioned blockchain."
+    }
+  ]
+}
